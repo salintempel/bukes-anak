@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Dashboard() {
+export default function Profil() {
     return (
         <div className="container">
-            <h1>Summary Info anak, jadwal imunisasi, dsb</h1>
+            <h1>Profil User</h1>
         </div>
     )
 }

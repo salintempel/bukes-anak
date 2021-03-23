@@ -1,7 +1,8 @@
 // import './App.css';
+import React, { useState } from 'react';
 import Login from './Login';
 import Dashboard from './Dashboard'
-import React, { useState } from 'react';
+import Sidebar from './Sidebar';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,6 +15,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {isLogin && <Sidebar />}
         {!isLogin && <Login />}
       </div>
       {/* just for temporary before Login work */}

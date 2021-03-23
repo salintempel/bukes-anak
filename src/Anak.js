@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Dashboard() {
+export default function Anak() {
     return (
         <div className="container">
-            <h1>Summary Info anak, jadwal imunisasi, dsb</h1>
+            <h1>Data perkembangan anak</h1>
         </div>
     )
 }
