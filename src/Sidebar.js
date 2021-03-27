@@ -21,7 +21,6 @@ export default function Sidebar() {
 
         </nav>
       </aside>
-
       <Switch>
         <Route path="/dashboard">
           <Dashboard />

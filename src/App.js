@@ -1,7 +1,6 @@
 // import './App.css';
 import React, { useState } from 'react';
 import Login from './Login';
-import Dashboard from './Dashboard'
 import Sidebar from './Sidebar';
 import {
   BrowserRouter as Router,
@@ -15,16 +14,15 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {/* just for temporary before Login work */}
+        <div className="temp" style={{ "text-align": "center" }}>
+          <Link to="/dashboard" onClick={() => setLogin(true)} >masuk tanpa login</Link> |
+          <Link to="/" onClick={() => setLogin(false)}>home</Link>
+        </div>
+
         {isLogin && <Sidebar />}
         {!isLogin && <Login />}
       </div>
-      {/* just for temporary before Login work */}
-      <Link to="/dashboard" onClick={() => setLogin(true)}>masuk tanpa login</Link>
-      <Switch>
-        <Route path="/dashboard">
-          <Dashboard />
-        </Route>
-      </Switch>
     </Router>
   );
 }
